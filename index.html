@@ -6,140 +6,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=BenchNine" rel="stylesheet">
-
-    <title>FCC: Landing Page Project</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <title>FCC Project: Landing Page</title>
 </head>
 
 <body>
-    <!-- Header -->
 
-    <header id="header">
+    <!-- header -->
+    <header>
         <div class="header-img"></div>
-        <div class="container">
-        <div>
-            <h1>Cronos Space Flights.</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, eligendi.</p>
-        </div>
+        <div id="container">
 
-            <!-- Navigation -->
-            <nav id="nav-bar">
-                <ul>
-                    <li class="nav-link">Home</li>
-                    <li class="nav-link">About</li>
-                    <li class="nav-link">Services</li>
-                    <li class="nav-link">Contact Us</li>
-                </ul>
+            <nav>
+                <div id="navigation">
+                <a href="#" class="nav-links">About</a>
+                <a href="#" class="nav-links">Services</a>
+                <a href="#" class="nav-links">Testimonials</a>
+                <a href="#" class="nav-links">Contact Us</a>
+            </div>
             </nav>
+            <h1>
+                Acme Thingy
+            </h1>
+            <h3>Sub Heading</h3>
         </div>
     </header>
 
-    <!-- Main Content -->
     <main id="main">
-
-        <!-- About -->
+        <!-- section: about -->
         <section id="about-us">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum a dolorum minus blanditiis sequi
-                aperiam. Corporis minima eaque pariatur rem nobis aut, laboriosam dolores quidem vel! Voluptatem autem
-                velit maxime quidem inventore ipsa asperiores praesentium blanditiis? Delectus ratione labore magni?</p>
+            <h2>About Us</h2>
+            <div class="section-a">
+                <!-- <div class="a-content"> -->
+                <video width="300px" height="300px" controls>
+                    <source src="https://videos.pexels.com/videos/man-doing-push-ups-857659" type="video/mp4">
+                </video>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi architecto fugiat illo non ipsa
+                    nisi optio sint consequatur facere eaque similique dicta dolorum accusamus, natus soluta saepe
+                    voluptates suscipit ab nostrum earum praesentium laborum! Autem eligendi modi unde iste
+                    assumenda!</p>
+            </div>
+            </div>
         </section>
 
-        <!-- services -->
+        <!-- section: Services -->
         <section id="services">
-            <ul>
-                <li>
-                    <div class="card">
-                        <img src="" alt="">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Lorem, ipsum.</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, corrupti?</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="card">
-                        <img src="" alt="">
-                    </div>
-                </li>
-                <li>
-                    <div class="card">
-                        <img src="" alt="">
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Form -->
-        <section id="user-form">
-            <form id="form">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum deleniti veritatis aperiam debitis
-                    consequatur similique tenetur. Sequi qui a ullam, ipsum neque, atque facere, nihil et soluta quia
-                    commodi. Tenetur.</p>
-            </form>
-        </section>
-
-        <section id="follow-us">
-        <div class="social-media grid-3">
-            <div>
-                    <i class="fab fa-instagram fa-3x"></i>
-                    <p>Instagram</p>
+            <h2>Our Services</h2>
+            <div class="section-b">
+                <div class="card">
+                    <i class="fas fa-dumbbell fa-5x"></i>
+                    <h3>Training Programs</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nesciunt distinctio ipsam
+                        accusantium aperiam architecto?</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-utensils fa-5x"></i>
+                    <h3>Nutrition</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nesciunt distinctio ipsam
+                        accusantium aperiam architecto?</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-heartbeat fa-5x"></i>
+                    <h3>Health Assessments</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nesciunt distinctio ipsam
+                        accusantium aperiam architecto?</p>
+                </div>
             </div>
-            <div>
+        </section>
+
+        <!-- section: testimonials -->
+        <section id="testimonials">
+            <div class="section-c">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1532384748853-8f54a8f476e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Femal weight lifter">
+                    <h3>Toni's story</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nesciunt distinctio ipsam
+                        accusantium aperiam architecto?</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1528304270437-714a2d6fbb6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Female runner">
+                    <h3>Dani's story</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nesciunt distinctio ipsam
+                        accusantium aperiam architecto?</p>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1492633030546-6236e2bf198e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80" alt="Standing male in pose">
+                    <h3>Franco's story</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nesciunt distinctio ipsam
+                        accusantium aperiam architecto?</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- section: contact -->
+        <section id="contact-us">
+            <div class="container-b">
+                <div class="social">
                     <i class="fab fa-facebook fa-3x"></i>
-                    <p>Facebook</p>
-            </div>
-            <div>
+                    <i class="fab fa-instagram fa-3x"></i>
                     <i class="fab fa-twitter fa-3x"></i>
-                    <p>Twitter</p>
-            </div>
-            <div>
                     <i class="fab fa-youtube fa-3x"></i>
-                    <p>Youtube</p>
+                </div>
+                <div class="form">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sunt assumenda incidunt. Est,
+                        laborum quia dicta tempore placeat eius blanditiis culpa sunt id facilis architecto expedita
+                        odit suscipit quasi neque eum dolorem? Repudiandae sapiente cupiditate voluptatum nisi ad odit
+                        commodi fugit sunt voluptate unde! Nisi dicta neque fugiat facilis quia.</p>
+                </div>
             </div>
-        </div>
+        </section>
 
+        <!-- footer -->
+        <footer>Lorem ipsum dolor sit amet.</footer>
 
-    </section>
     </main>
 
-    <!-- user stories -->
-    <!--
-User Story #1: My product landing page should have a header element with a corresponding id="header".
 
-User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here.
-
-User Story #3: Within the #header element I can see a nav element with a corresponding id="nav-bar".
-
-User Story #4: I can see at least three clickable elements inside the nav element, each with the class nav-link.
-
-User Story #5: When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.
-
-User Story #6: I can watch an embedded product video with id="video".
-
-User Story #7: My landing page has a form element with a corresponding id="form".
-
-User Story #8: Within the form, there is an input field with id="email" where I can enter an email address.
-
-User Story #9: The #email input field should have placeholder text to let the user know what the field is for.
-
-User Story #10: The #email input field uses HTML5 validation to confirm that the entered text is an email address.
-
-User Story #11: Within the form, there is a submit input with a corresponding id="submit".
-
-User Story #12: When I click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit) that confirms the email address was entered and that it posted successfully.
-
-User Story #13: The navbar should always be at the top of the viewport.
-
-User Story #14: My product landing page should have at least one media query.
-
-User Story #15: My product landing page should utilize CSS flexbox at least once.
-    -->
-    <!-- Footer -->
-    <footer id="footer">
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
-    </footer>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>

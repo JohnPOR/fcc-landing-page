@@ -12,125 +12,146 @@
     <title>FCC Project: Landing Page</title>
 </head>
 
-<!-- requires use of flex at least once -->
-
 <body>
     <!-- header -->
-        <header id="header">
-            <!-- navbar should always be at top of viewport -->
-            <nav id="nav-bar">
-                <a href="#about" class="nav-link">About</a>
-                <a href="#services" class="nav-link">Services</a>
-                <a href="#testimonials" class="nav-link">Testimonials</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </nav>
-        </header>
-        <!-- main image -->
-        <div id="showcase">
-            <!-- image needs to be in header for FCC -->
-            <div id="header-img">
-            </div>
-        </div>
-        <div class="header-text">
-            <h1>Rogue Fitness</h1>
-            <h3>Personal Training</h3>
-            <h4>Strength does not come from physical capacity. It comes from an indomitable will</h4>
-        </div>
+    <header id="header">
+        <!-- navbar should always be at top of viewport -->
+        <nav id="nav-bar">
+            <a href="#about-us" class="nav-link">About</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="#testimonials" class="nav-link">Testimonials</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
 
-    <main id="main">
+        <!-- image needs to be in header for FCC -->
+
+            <img src="" alt="" id="header-img">
+
+    </header>
+
+    <!-- main image cotainer-->
+    <div id="showcase">
+    </div>
+
+    <div class="header-text">
+        <h1>Rogue Fitness</h1>
+        <h3>Personal Training</h3>
+        <h4>Strength does not come from physical capacity. It comes from an indomitable will</h4>
+    </div>
+
+    <!-- main body -->
+    <main id="main-content">
+
         <!-- section: about -->
         <section id="about-us">
-            <h2>About Us</h2>
-            <div class="section-a">
-                <video width="500px" height="600px" autoplay muted loop id="video">
+            <header>
+                <h2>About Us</h2>
+            </header>
+            <div class="content">
+                <video autoplay muted loop id="video">
                     <source src="https://staging.coverr.co/s3/mp4/Squat-it.mp4">
                 </video>
-                <!-- <div class="a-content"> -->
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi architecto fugiat illo non ipsa
-                    nisi optio sint consequatur facere eaque similique dicta dolorum accusamus, natus soluta saepe
-                    voluptates suscipit ab nostrum earum praesentium laborum! Autem eligendi modi unde iste
-                    assumenda!</p>
-            </div>
+                <div>
+                    <p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a
+                        comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of
+                        the hero. And most times they're friends, like you and me! I should've known way back when...
+                        You know why, David? Because of the kids. They called me Mr Glass.</p>
+                    <br>
+                    <p>
+                        Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the
+                        most popular gun in American crime. Do you believe that shit? It actually says that in the
+                        little book that comes with it: the most popular gun in American crime. Like they're actually
+                        proud of that shit.
+                </div>
             </div>
         </section>
 
         <!-- section: Services -->
         <section id="services">
-            <h2>Our Services</h2>
-            <div class="section-b">
-                <div class="card">
-                    <i class="fas fa-dumbbell fa-5x"></i>
-                    <h3>Training Programs</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nesciunt distinctio ipsam
-                        accusantium aperiam architecto?</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-utensils fa-5x"></i>
-                    <h3>Nutrition</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nesciunt distinctio ipsam
-                        accusantium aperiam architecto?</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-heartbeat fa-5x"></i>
-                    <h3>Health Assessments</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nesciunt distinctio ipsam
-                        accusantium aperiam architecto?</p>
-                </div>
+            <header>
+                <h2>Our Services</h2>
+            </header>
+            <div class="card">
+                <a href="#"><i class="fas fa-dumbbell fa-5x"></i></a>
+                <h4>Training Programs</h4>
+                <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently
+                    than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the
+                    exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown.
+                    However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite
+                    ends.</p>
+            </div>
+            <div class="card">
+                <a href="#"><i class="fas fa-utensils fa-5x"></i></a>
+                <h4>Nutrition</h4>
+                <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny
+                    of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through
+                    the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I
+                    will strike down upon thee with great vengeance and furious anger those who would attempt to poison
+                    and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.
+                </p>
+            </div>
+            <div class="card">
+                <a href="#"><i class="fas fa-heartbeat fa-5x"></i></a>
+                <h4>Health Assessments</h4>
+                <p>Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit
+                    while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give
+                    you this case, it don't belong to me. Besides, I've already been through too much shit this morning
+                    over this case to hand it over to your dumb ass.
+                </p>
             </div>
         </section>
 
         <!-- section: testimonials -->
         <section id="testimonials">
-            <div class="section-c">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1532384748853-8f54a8f476e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-                        alt="Femal weight lifter">
-                    <h3>Toni's story</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nesciunt distinctio ipsam
-                        accusantium aperiam architecto?</p>
-                </div>
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1528304270437-714a2d6fbb6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-                        alt="Female runner">
-                    <h3>Dani's story</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nesciunt distinctio ipsam
-                        accusantium aperiam architecto?</p>
-                </div>
-                <div class="card">
-                    <img src="https://images.pexels.com/photos/163403/box-sport-men-training-163403.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                        alt="Standing male in boxing pose">
-                    <h3>Franco's story</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nesciunt distinctio ipsam
-                        accusantium aperiam architecto?</p>
-                </div>
-                <div class="btn">
-                    <a href="#">Read More</a>
-                </div>
+            <h2>Testimonials</h2>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1532384748853-8f54a8f476e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                    alt="Femal weight lifter">
+                <h4>Toni's story</h4>
+                <p>Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to
+                    throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks. Motherfucker
+                    do that shit to me, he better paralyze my ass, 'cause I'll kill the motherfucker, know what I'm
+                    sayin'? <a href="#">Read More</a> </p>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1528304270437-714a2d6fbb6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                    alt="Female runner">
+                <h4>Dani's story</h4>
+                <p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic,
+                    you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero.
+                    And most times they're friends, like you and me! I should've known way back when... You know why,
+                    David? Because of the kids. They called me Mr Glass. <a href="#">Read More</a>
+                </p>
+            </div>
+            <div class="card">
+                <img src="https://images.pexels.com/photos/163403/box-sport-men-training-163403.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                    alt="Standing male in boxing pose">
+                <h4>Franco's story</h4>
+                <p>My money's in that office, right? If she start giving me some bullshit about it ain't there, and we
+                    got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna
+                    shoot that bitch in the kneecaps, find out where my goddamn money is. She gonna tell me too. Hey,
+                    look at me when I'm talking to you, motherfucker. You listen: we go in there, and that nigga
+                    Winston or anybody else is in there, you the first motherfucker to get shot. You understand? <a
+                        href="#">Read More</a>
+                </p>
+            </div>
+            <div class="btn">
+                <a href="#">More Testimonials</a>
             </div>
         </section>
 
         <!-- section: contact -->
-        <section id="contact-us">
+        <section id="contact">
+            <h2>Contact Us</h2>
             <div class="container-b">
-                <div class="social">
-                    <i class="fab fa-facebook fa-3x"></i>
-                    <i class="fab fa-instagram fa-3x"></i>
-                    <i class="fab fa-twitter fa-3x"></i>
-                    <i class="fab fa-youtube fa-3x"></i>
-                </div>
-
-                <!-- email (id email, placeholder, validation);
-
-                submit (id submit, when submit goe sto static page - https://www.freecodecamp.com/email-submit - ) -->
                 <div class="contact-form">
-                    <form action="" id="form">
-
+                    <form action="https://www.freecodecamp.com/email-submit" id="form" method="POST">
+                        <input type="text" id="first-name" required placeholder="Enter first name">
+                        <input type="text" id="surname" required placeholder="Enter surname">
+                        <input type="email" name="email" id="email" required placeholder="Enter valid email">
+                        <textarea name="text-area" id="text-area" cols="30" rows="10"></textarea>
+                        <input type="submit" name="submit" id="submit">
                     </form>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sunt assumenda incidunt. Est,
-                        laborum quia dicta tempore placeat eius blanditiis culpa sunt id facilis architecto expedita
-                        odit suscipit quasi neque eum dolorem? Repudiandae sapiente cupiditate voluptatum nisi ad odit
-                        commodi fugit sunt voluptate unde! Nisi dicta neque fugiat facilis quia.</p>
                 </div>
             </div>
         </section>
@@ -138,7 +159,14 @@
         <!-- at least one media query required -->
 
         <!-- footer -->
-        <footer>Lorem ipsum dolor sit amet.</footer>
+        <footer>
+                <div class="social">
+                        <i class="fab fa-facebook fa-3x"></i>
+                        <i class="fab fa-instagram fa-3x"></i>
+                        <i class="fab fa-twitter fa-3x"></i>
+                        <i class="fab fa-youtube fa-3x"></i>
+                    </div>
+        </footer>
 
     </main>
 

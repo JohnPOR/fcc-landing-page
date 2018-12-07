@@ -6,42 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Black+Ops+One" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
     <title>FCC Project: Landing Page</title>
 </head>
 
+<!-- requires use of flex at least once -->
+
 <body>
-
     <!-- header -->
-    <header>
-        <div class="header-img"></div>
-        <div id="container">
-
-            <nav>
-                <div id="navigation">
-                <a href="#" class="nav-links">About</a>
-                <a href="#" class="nav-links">Services</a>
-                <a href="#" class="nav-links">Testimonials</a>
-                <a href="#" class="nav-links">Contact Us</a>
-            </div>
+        <header id="header">
+            <!-- navbar should always be at top of viewport -->
+            <nav id="nav-bar">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </nav>
-            <h1>
-                Acme Thingy
-            </h1>
-            <h3>Sub Heading</h3>
+        </header>
+        <!-- main image -->
+        <div id="showcase">
+            <!-- image needs to be in header for FCC -->
+            <div id="header-img">
+            </div>
         </div>
-    </header>
+        <div class="header-text">
+            <h1>Rogue Fitness</h1>
+            <h3>Personal Training</h3>
+            <h4>Strength does not come from physical capacity. It comes from an indomitable will</h4>
+        </div>
 
     <main id="main">
         <!-- section: about -->
         <section id="about-us">
             <h2>About Us</h2>
             <div class="section-a">
-                <!-- <div class="a-content"> -->
-                <video width="300px" height="300px" controls>
-                    <source src="https://videos.pexels.com/videos/man-doing-push-ups-857659" type="video/mp4">
+                <video width="500px" height="600px" autoplay muted loop id="video">
+                    <source src="https://staging.coverr.co/s3/mp4/Squat-it.mp4">
                 </video>
+                <!-- <div class="a-content"> -->
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi architecto fugiat illo non ipsa
                     nisi optio sint consequatur facere eaque similique dicta dolorum accusamus, natus soluta saepe
                     voluptates suscipit ab nostrum earum praesentium laborum! Autem eligendi modi unde iste
@@ -79,22 +83,28 @@
         <section id="testimonials">
             <div class="section-c">
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1532384748853-8f54a8f476e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Femal weight lifter">
+                    <img src="https://images.unsplash.com/photo-1532384748853-8f54a8f476e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                        alt="Femal weight lifter">
                     <h3>Toni's story</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nesciunt distinctio ipsam
                         accusantium aperiam architecto?</p>
                 </div>
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1528304270437-714a2d6fbb6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Female runner">
+                    <img src="https://images.unsplash.com/photo-1528304270437-714a2d6fbb6b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                        alt="Female runner">
                     <h3>Dani's story</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nesciunt distinctio ipsam
                         accusantium aperiam architecto?</p>
                 </div>
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1492633030546-6236e2bf198e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80" alt="Standing male in pose">
+                    <img src="https://images.pexels.com/photos/163403/box-sport-men-training-163403.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                        alt="Standing male in boxing pose">
                     <h3>Franco's story</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, nesciunt distinctio ipsam
                         accusantium aperiam architecto?</p>
+                </div>
+                <div class="btn">
+                    <a href="#">Read More</a>
                 </div>
             </div>
         </section>
@@ -108,7 +118,15 @@
                     <i class="fab fa-twitter fa-3x"></i>
                     <i class="fab fa-youtube fa-3x"></i>
                 </div>
-                <div class="form">
+
+                <!-- email (id email, placeholder, validation);
+
+                submit (id submit, when submit goe sto static page - https://www.freecodecamp.com/email-submit - ) -->
+                <div class="contact-form">
+                    <form action="" id="form">
+
+                    </form>
+
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sunt assumenda incidunt. Est,
                         laborum quia dicta tempore placeat eius blanditiis culpa sunt id facilis architecto expedita
                         odit suscipit quasi neque eum dolorem? Repudiandae sapiente cupiditate voluptatum nisi ad odit
@@ -117,12 +135,14 @@
             </div>
         </section>
 
+        <!-- at least one media query required -->
+
         <!-- footer -->
         <footer>Lorem ipsum dolor sit amet.</footer>
 
     </main>
 
-
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
